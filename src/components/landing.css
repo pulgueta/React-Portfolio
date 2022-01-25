@@ -2,9 +2,44 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../assets/waves-bg.svg');
+    background-image: url('../assets/waves.svg');
     height: 100vh;
     display: flex;
+}
+
+.text {
+    width: 95rem;
+    height: fit-content;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.text h1 {
+    font-size: 4.8rem;
+}
+
+.text blockquote {
+    font-size: 1.8rem;
+    font-style: italic;
+    letter-spacing: .1ch;
+}
+
+.text p {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: .1ch;
+}
+
+.text img {
+    border-radius: 100%;
+    width: 32rem;
 }
 
 @media (max-width: 435px) {
@@ -16,38 +51,23 @@
         height: 100vh;
     }
 
+    .text img {
+        width: 22rem;
+    }
 
-}
+    .text {
+        padding: 2rem;
+    }
 
-.text {
-    width: 80rem;
-    height: fit-content;
-    margin: auto;
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .text h1 {
+        font-size: 3.8rem;
+    }
 
-.text h1 {
-    font-size: 4.8rem;
-}
+    .text blockquote {
+        font-size: 1.4rem;
+    }
 
-.text blockquote {
-    font-size: 1.8rem;
-    font-style: italic;
-    letter-spacing: .2ch;
-}
-
-.text p {
-    width: 100%;
-    font-size: 1.8rem;
-    font-weight: 200;
-    letter-spacing: .1ch;
-}
-
-.wrapper img {
-    border-radius: 100%;
+    .text p {
+        font-size: 1.4rem;
+    }
 }
