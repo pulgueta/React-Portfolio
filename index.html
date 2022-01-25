@@ -14,9 +14,15 @@
   <script type="module" src="/src/main.jsx"></script>
 
   <style>
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       margin: 0;
       padding: 0;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
     }
 
     html {
@@ -26,6 +32,8 @@
 
     body {
       font-size: 1.6rem;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   </style>
 </body>

@@ -5,7 +5,7 @@ import Secondary from './components/Secondary';
 const App = () => {
   return (
     <div>
-      <Landing />
+      <Landing text='Andrés Rodríguez'/>
       <Secondary />
     </div>
   );
