@@ -8,13 +8,13 @@ const Landing = () => {
         <div className='landing'>
             <div className="wrapper">
                 <div className="text">
-                    <img src={profile} alt='Profile Picture' width='300px'/>
+                    <img src={profile} alt='Profile Picture' width='320px'/>
                     <br />
                     <h1>Andrés Rodríguez</h1>
                     <blockquote>-Full-Stack Web Developer-</blockquote>
                     <br /><br />
-                    <p>I'm a Software Engineering student from Colombia. I started learning Front-end development
-                        with React. Later, I decided to become a Full-Stack developer mainly with React using the MERN Stack.
+                    <p>I am a Software Engineering student from Colombia. My main focus is the Full-Stack Web Development, but I am
+                        also interested in Cybersecurity, learning everyday from both topics to become a 
                     </p>
                 </div>
             </div>
