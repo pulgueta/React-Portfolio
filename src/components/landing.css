@@ -21,7 +21,7 @@
 
 .text {
     width: 80rem;
-    height: 75vh;
+    height: fit-content;
     margin: auto;
     color: hsl(0, 0%, 100%);
     text-align: center;
