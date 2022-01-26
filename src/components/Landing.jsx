@@ -16,7 +16,7 @@ const Landing = ({ text }) => {
                     fade: 'fade-in'
                 })
             }
-        }, 1500)
+        }, 600)
 
         return () => clearInterval(timeout)
     }, [fadeProp])
