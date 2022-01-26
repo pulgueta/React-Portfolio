@@ -48,7 +48,7 @@ const Secondary = () => {
 
     return (
         <div className='sec-wrapper'>
-            <div className='images'>
+            <div className='inner-wrapper'>
                 {images.map((item, index) => {
                     return (
                         <div className='pics' key={index}>

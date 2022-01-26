@@ -2,7 +2,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../assets/waves.svg');
+    background-image: url("../assets/waves.svg");
     height: 100vh;
     display: flex;
     -moz-transform: scaleY(-1);
@@ -13,15 +13,25 @@
     -ms-filter: "FlipV";
 }
 
-.images {
+.inner-wrapper {
     -moz-transform: scaleY(-1);
     -o-transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
     filter: FlipV;
+    width: 150rem;
+    margin: auto;
     -ms-filter: "FlipV";
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+}
 
-    
+.inner-wrapper img {
+    width: 100%;
+    border-radius: 2rem;
 }
 
 @media (max-width: 435px) {
@@ -29,7 +39,18 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('../assets/mobile-waves.svg');
+        background-image: url("../assets/mobile-waves.svg");
         height: 100vh;
+    }
+
+    .inner-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+    }
+
+    .inner-wrapper img {
+        width: 75%;
     }
 }
