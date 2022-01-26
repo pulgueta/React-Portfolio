@@ -1,13 +1,19 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing';
+import NotFound from './components/NotFound';
 import Secondary from './components/Secondary';
 
 const App = () => {
   return (
-    <div>
-      <Landing text='Andrés Rodríguez'/>
-      <Secondary />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing text='Andrés Rodríguez' />} />
+        
+
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
