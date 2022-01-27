@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { PropTypes } from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 import profile from '../assets/profile-pic.jpg'
@@ -42,11 +41,12 @@ const Landing = ({ text }) => {
                         photography and videography. Click the button to check some of my photos.
                     </p>
                     <br />
-                    <button onClick={redirect}>Click me!</button>
+                    <button id='text-btn' className={fadeProp.fade} onClick={redirect}>Click me!</button>
                 </div>
             </div>
         </div>
     );
+
 };
 
 export default Landing;

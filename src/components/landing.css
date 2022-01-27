@@ -51,6 +51,24 @@
     width: 32rem;
 }
 
+.text #text-btn {
+    background-color: hsl(0, 0%, 25%);
+    border: none;
+    width: 12rem;
+    height: 4rem;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.text #text-btn:hover {
+    background-color: hsl(240, 5%, 5%);
+}
+
 @media (max-width: 435px) {
     .wrapper {
         background-position: center;

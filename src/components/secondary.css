@@ -1,56 +1,82 @@
-.sec-wrapper {
+.image-bg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../assets/waves.svg");
     height: 100vh;
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
     display: flex;
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    filter: FlipV;
-    -ms-filter: "FlipV";
+    justify-content: center;
+    align-items: center;
 }
 
-.inner-wrapper {
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    filter: FlipV;
-    width: 150rem;
-    margin: auto;
-    -ms-filter: "FlipV";
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 4rem;
-    grid-row-gap: 2rem;
+.image {
+    width: 120rem;
+    height: 80rem;
+    border-radius: 1rem;
 }
 
-.inner-wrapper img {
-    width: 100%;
-    border-radius: 2rem;
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 3.2rem;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
 }
 
-@media (max-width: 435px) {
-    .sec-wrapper {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("../assets/mobile-waves.svg");
-        height: 100vh;
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 3.2rem;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1000ms ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+@media (max-width: 1296px) {
+    .image {
+        width: 100rem;
+        height: 70rem;
     }
+}
 
-    .inner-wrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 20px;
+@media (max-width: 1084px) {
+    .image {
+        width: 70rem;
+        height: 50rem;
     }
+}
 
-    .inner-wrapper img {
-        width: 75%;
+@media (max-width: 767px) {
+    .image {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .image {
+        width: 30rem;
+        height: 20rem;
     }
 }
