@@ -9,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Landing text='Andrés Rodríguez' />} />
-        
+        <Route path='/pictures' element={<Secondary />} />
 
         <Route path='*' element={<NotFound />} />
       </Routes>
