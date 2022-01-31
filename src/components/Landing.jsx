@@ -34,9 +34,9 @@ const Landing = ({ text }) => {
                     <img className={fadeProp.fade} src={profile} alt='Profile Picture' />
                     <br />
                     <h1 className={fadeProp.fade}>{text}</h1>
-                    <blockquote className={fadeProp.fade}>-Full-Stack Web Developer and Photographer-</blockquote>
+                    <blockquote className={fadeProp.fade}>-Front-End Developer and Photographer-</blockquote>
                     <br /><br />
-                    <p className={fadeProp.fade}>I am a Software Engineering student from Colombia. My main focus is the Full-Stack Web Development, but I also
+                    <p className={fadeProp.fade}>I am a Software Engineering student from Colombia. My main focus is the Front-End Development, but I also
                         learn about Cybersecurity, I study from both topics to become a hacker and a better web developer. I also practice
                         photography and videography. Click the button to check some of my photos.
                     </p>
