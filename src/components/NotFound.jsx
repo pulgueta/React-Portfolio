@@ -5,7 +5,7 @@ import './landing.css'
 const NotFound = () => {
     return (
         <div className='wrapper'>
-            <h1 className='text'>What are you trying to reach? &128064;</h1>
+            <h1 className='text'>What are you trying to reach? ☠️</h1>
         </div>
     );
 };
